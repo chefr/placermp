@@ -1,0 +1,22 @@
+import math
+from typing import Callable
+
+PARAMETERS: dict[str, int | str] = {
+    'IN_SECTION_HEADER_MAX_LEN': 127,
+    'IN_SECTION_HEADER_TRUNC': 32,
+    'IN_PARAMETERS_SECTION_TITLE': 'PARAMETERS',
+    'IN_REQ_PARAMETERS': ('START_ROW', 'END_ROW', 'START_COLUMN', 'END_COLUMN'),
+    'IN_INT_PARAMETERS': ('START_ROW', 'END_ROW', 'START_COLUMN', 'END_COLUMN'),
+    'IN_SECTION_SEPARATOR': '#',
+    'IN_KEY_VALUE_SEPARATOR': '=',
+    'IN_FUNCTION_PREFIX': 'f:',
+    'IN_FORECAST_DATA_POSTFIX': '*',
+    'IN_NOMINAL_DATA_POSTFIX': '_NOMINAL',
+    'IN_ADD_PARAMETER_PREFIX': '+',
+    'IN_FULL_DATA_TITLE_POSTFIX': '_FULL',
+    'DEFAULT_FUNCTIONS': ['max', 'min', 'abs'],
+    'CUSTOM_FUNCTIONS': {},
+    'CONSTANTS': {'PI': math.pi}
+}
+
+CUSTOM_FUNCTIONS: dict[str: Callable] = {}
